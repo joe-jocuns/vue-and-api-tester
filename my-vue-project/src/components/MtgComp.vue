@@ -40,7 +40,7 @@ export default {
         case 'B':
           return 'rgb(21, 11, 0)';
         case 'W':
-          return 'rgb(249, 250, 244)';
+          return 'rgb(211,211,211)';
       }
     },
   },
@@ -54,5 +54,9 @@ export default {
 #bg{
   border-style: solid;
   border-width: 2em;
+  background: rgb(23, 18, 15);
+}
+h1{
+  color: aliceblue;
 }
 </style>
