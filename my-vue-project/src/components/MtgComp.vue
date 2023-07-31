@@ -1,7 +1,7 @@
 <template>
  <div :style="{ borderColor: bgColor }" id="bg">
     <h1>{{name}}</h1>
-    <img :src="imgUrl" alt="">
+    <img :src="imgUrl" id="img1" alt="">
   
    
   </div>
@@ -60,5 +60,9 @@ export default {
 }
 h1{
   color: aliceblue;
+}
+#img1{
+  height: auto;
+  width: auto;
 }
 </style>
