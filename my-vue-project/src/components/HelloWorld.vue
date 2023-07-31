@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    
+     <a target="_blank" href="https://scryfall.com/docs/api">
+    <h1>Scryfall Api</h1>
+  </a>
   </div>
 </template>
 
@@ -29,5 +31,8 @@ li {
 }
 a {
   color: #42b983;
+}
+h1{
+  color: black;
 }
 </style>
