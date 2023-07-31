@@ -41,7 +41,7 @@ export default {
           return 'rgb(21, 11, 0)';
         case 'W':
           return 'rgb(211,211,211)';
-        case '':
+        default:
           return 'rgb(192,192,192)';
       }
     },
