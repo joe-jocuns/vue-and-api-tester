@@ -1,8 +1,11 @@
 <template>
-  <div>
-    <h1>
+  <div id="bg1">
+    <a href="https://kanye.rest/" target="_blank">
+    <h1>Kanye.Rest</h1>
+    </a>
+    <h2>
       "{{ quote }}"~Kayne West
-    </h1>
+    </h2>
   </div>
 </template>
 
@@ -17,18 +20,21 @@ export default {
     };
   },
   methods: {
-    loadUsers() {
+    loadQuote() {
       KanyeService.GetKanyeQuote().then((response) => {
         this.quote = response.data.quote; 
       });
     }
   },
   mounted() {
-    this.loadUsers();
+    this.loadQuote();
   }
 };
 </script>
 
 <style>
 
+#bg1{
+  background-color: rgb(158, 158, 158);
+}
 </style>
