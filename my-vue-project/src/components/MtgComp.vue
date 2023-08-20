@@ -1,4 +1,8 @@
 <template>
+<div>
+<SearchComp
+@rando-clicked="loadCard"
+/>
  <div :style="{ borderColor: bgColor }" id="bg">
  
     <h2>{{name}}</h2>
@@ -6,13 +10,20 @@
   
    
   </div>
+</div>
 </template>
 
 <script>
 import MtgService from '../services/MtgService';
+import SearchComp from './SearchComp.vue';
+
 
 export default {
-  name: 'user-list',
+  components: {
+    SearchComp
+   
+
+  },
   data() {
     return {
       name: '',
@@ -46,9 +57,6 @@ export default {
           return 'rgb(192,192,192)';
       }
     },
-  },
-  mounted() {
-    this.loadCard();
   },
 };
 </script>
